@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit tracker</title>
+    <link rel="stylesheet" href="{{url_for('habits.static', filename='css/style.css')}}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="main">
+    <section class="header">
+        <section class="header__home">
+            <a class="home header__link" href="{{url_for('habits.index')}}"> <h1>Home</h1> </a>
+        </section>
+        <section class="header__add">
+            {% if "add" not in request.endpoint %}
+                <a class="addhabit header__link" href="{{url_for('habits.add')}}">+ Add Habit</a>
+            {% endif %}
+        </section>
+    </section>
+
+    {%block content%}
+
+    {%endblock%}
+</body>
+</html>

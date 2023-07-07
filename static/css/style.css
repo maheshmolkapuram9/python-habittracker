@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd43b;
+    padding: 1rem 2rem;
+}
+
+.home{
+    font-size: 2rem;
+}
+
+.header__link{
+    color: blue;
+    text-decoration: none;
+}
+
+.header__link:hover{
+    text-decoration: underline;
+}
+
+.index_main{
+    text-align: center;
+    background-color:#f8f0fc;
+}
+
+
+
+
+.daterange {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dates {
+    padding: 10px;
+  }
+  
+  .dates__link {
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  @media (max-width:450px){
+    .dates__link:first-of-type,
+    .dates__link:nth-of-type(2),
+    .dates__link:nth-last-of-type(),
+    .dates__link:nth-last-of-type(2) {
+      display: none;
+    }
+  }
+  
+
+  .dates__link__current{
+    background-color: #e599f7;
+  }
+  
+  .dates__link:hover {
+    background-color: #da77f2;
+  }
+  
+  .dates__link time {
+    display: block;
+  }
+  
+  .dates__link span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .recents{
+    background-color: #f3d9fa;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .index_main{
+    text-align: left;
+    padding:1rem 2rem 3rem 2rem;
+  }
+
+  .habit_label{
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: bold;
+    padding-bottom: 0.8rem;
+  }
+
+  .habit_input{
+    margin: 0.5rem 0;
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    border-style: none;
+    background-color: #f8f9fa;
+  }
+
+  .habit_button{
+    padding: 0.1rem 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    float: right;
+    background-color: #da77f2;
+    border-style: none;
+    border-radius: 0.7rem;
+  }
+
+  .recent_habits_title{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 0.3rem 1.5rem;
+    margin-bottom: 0.5rem;
+    background-color:#f3d9fa;
+    align-items: center;
+  }
+
+  .habit_icon{
+    width: 1.5rem;
+  }
+
+  .habit__button{
+    border-style: none;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color:#e599f7;
+  }
+
+  .habit__button:hover{
+    background-color: #da77f2;
+    text-decoration: solid;
+    cursor: pointer;
+    color: blue;
+    font-weight: bold;
+  }
+
+  .habit_button:hover{
+    background-color: #da77f2;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+  }
